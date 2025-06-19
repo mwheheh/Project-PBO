@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rekam Medis Pasien</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 80px;
+    }
+
+    .clinic-info h1 {
+      margin: 0;
+      color: #005c8a;
+      font-size: 24px;
+    }
+
+    .clinic-info p {
+      margin: 2px 0 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #ddd;
+      margin: 20px 0;
+    }
+
+    .record-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      row-gap: 15px;
+      column-gap: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #005c8a;
+      align-self: center;
+    }
+
+    .value {
+      background-color: #f2f6fc;
+      padding: 8px 12px;
+      border-radius: 5px;
+      min-height: 36px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      text-align: right;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .record-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .label {
+        padding-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <div class="clinic-info">
+        <h1>Rekam Medis Pasien</h1>
+        <p>Klinik Kartika Surabaya</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="record-grid">
+      <div class="label">Nama Pasien</div><div class="value">{{nama_pasien}}</div>
+      <div class="label">Tanggal Lahir</div><div class="value">{{tanggal_lahir}}</div>
+      <div class="label">Jenis Kelamin</div><div class="value">{{jenis_kelamin}}</div>
+      <div class="label">Alamat</div><div class="value">{{alamat}}</div>
+      <div class="label">No Telepon</div><div class="value">{{no_telepon}}</div>
+      <div class="label">Email</div><div class="value">{{email}}</div>
+      <div class="label">Waktu Kunjungan</div><div class="value">{{waktu_kunjungan}}</div>
+      <div class="label">Jenis Kunjungan</div><div class="value">{{jenis_kunjungan}}</div>
+      <div class="label">Diagnosis</div><div class="value">{{diagnosis}}</div>
+      <div class="label">Tindakan</div><div class="value">{{tindakan}}</div>
+      <div class="label">Obat Diberikan</div><div class="value">{{obat}}</div>
+      <div class="label">Catatan</div><div class="value">{{catatan}}</div>
+      <div class="label">Dokter</div><div class="value">{{dokter}}</div>
+      <div class="label">Jadwal Kontrol Ulang</div><div class="value">{{kontrol_ulang}}</div>
+    </div>
+
+    <div class="footer">
+      Dicetak pada: {{printed}}
+    </div>
+  </div>
+</body>
+</html>
