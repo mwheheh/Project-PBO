@@ -422,7 +422,7 @@ public class RekamMedis extends javax.swing.JFrame {
         jLabel18.setText("Jenis Kunjungan");
         Mid.add(jLabel18);
 
-        Combox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Combox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pemeriksaan Umum'", "'Pemeriksaan Spesialis'", "'Tindakan Minor'", "'Medical Check Up'", "'Vaksinasi" }));
         Mid.add(Combox);
 
         jLabel19.setText("Diagnosis");
@@ -444,7 +444,7 @@ public class RekamMedis extends javax.swing.JFrame {
         jLabel4.setText("Dokter");
         Mid.add(jLabel4);
 
-        DokterBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        DokterBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Budi", "Ahmad", "Bakri" }));
         Mid.add(DokterBox);
 
         jLabel11.setText("Jadwal Kontrol Ulang");

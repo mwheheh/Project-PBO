@@ -492,11 +492,12 @@
             <Component class="javax.swing.JComboBox" name="Combox">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
+                  <StringArray count="5">
+                    <StringItem index="0" value="Pemeriksaan Umum&apos;"/>
+                    <StringItem index="1" value="&apos;Pemeriksaan Spesialis&apos;"/>
+                    <StringItem index="2" value="&apos;Tindakan Minor&apos;"/>
+                    <StringItem index="3" value="&apos;Medical Check Up&apos;"/>
+                    <StringItem index="4" value="&apos;Vaksinasi"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -540,11 +541,10 @@
             <Component class="javax.swing.JComboBox" name="DokterBox">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Budi"/>
+                    <StringItem index="1" value="Ahmad"/>
+                    <StringItem index="2" value="Bakri"/>
                   </StringArray>
                 </Property>
               </Properties>
